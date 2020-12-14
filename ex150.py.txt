@@ -1,0 +1,7 @@
+a=["가","나","다","라"]
+a.sort(reverse=True)   # a.sort(reverse=True) 사용하여 a를 꺼꾸로 배치시킨다.
+for i in a:                #거꾸로 배치시킨 a를 for문을 돌린다.
+    print(i)               #for이 돌아가때마다 print(i)을 실행시켜 라를 출력한다. 
+                                                                          # 다
+                                                                          # 나
+                                                                          # 가
