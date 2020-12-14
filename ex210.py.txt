@@ -1,0 +1,15 @@
+def message1():
+    print("A")
+
+def message2():
+    print("B")
+
+def message3():       #i가0일때 message2()실행하여서 print("B")실행시키고 print("C")실행시킨다i가1,2,3일때도 마찬가지이다.
+    for i in range (3) :#for문이 끝난다음 for문 밖에 있는 message1()이 실행되어 print("A")실행시킨다.
+        message2()     #그러므로 B 가 실행된다.
+        print("C")                  # C
+    message1()                    # B
+                                    #  C
+message3()                       #  B
+                                      # C
+                                      # A

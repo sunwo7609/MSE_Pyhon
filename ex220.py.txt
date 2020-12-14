@@ -1,0 +1,9 @@
+def print_max(a,b,c): #def로 함수 print_max(a,b,c)를 정의한다.
+    if a>b and a>c:   #만약 a가 b보다 크고 a가 c보다 크면  print(a)
+        print(a)
+    if b>a and b>c:   #만약 b가 a보다 크고 b가 c보다 크면 print(b)
+        print(b)
+    if c>a and c>b:    #만약 c가 a보다 크고 c가 b보다 크면 print(c)
+        print(c)
+
+     

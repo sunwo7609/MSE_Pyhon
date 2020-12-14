@@ -1,0 +1,17 @@
+ class Stock:   #Stock클래스 생성한다.
+    def __init__(self, name, code, PER, PBR, 배당수익률): #Stock 클래스의 self객체를 생성한다음 종목명과 종목코드등 입력받을수 있도록 함수를 정의한다.   
+        self.name = name         #self에 변수를 만든다음 각 해당되는 문자열을 바인딩하게 해준다.
+        self.code = code
+        self.PER = PER
+        self.PBR = PBR
+        self.배당수익률 = 배당수익률
+종목=[]  
+삼성 = Stock("삼성전자", "005930", 15.79, 1.33, 2.83)     #각각의 객체를 생성한다.          
+현대차 = Stock("현대차", "005380", 8.70, 0.35, 4.27)
+LG전자 = Stock("LG전자", "066570", 317.34, 0.69, 1.37)
+종목.append(삼성)                                              #삼성, 현대차, lg전자를 append함수를 사용하여 현대차 lg전자 삼성을 종목에 추가한다. 
+종목.append(현대차)                                           #for문을 이용하여 i를 종목내 자료들을 바인딩한다.
+종목.append(LG전자)                                           #i.을 이용하여 i객체에 접근한다음 name과 PER가 바인딩 하는 것을 출력된다.
+for i in 종목:
+    print(i.name,i.PER)             
+        

@@ -1,0 +1,7 @@
+low_prices  = [100, 200, 400, 800, 1000]
+high_prices = [150, 300, 430, 880, 1000]
+volatility=[ ]
+for i in range(5): #리스트내 자료가 5개 이므로 range(5)를 이용하여 i를 0부터 4까지 정수를 바인딩한다. 
+    변동폭=high_prices[i]-low_prices[i]  #리스트high_prices의 i번째 자료-리스트low_prices의 i번째 자료를 변수변동폭에 바인딩한다.
+    volatility.append(변동폭)#append함수를 이용하여 변동폭을 volatility리스트에 추가시킨다.
+print(volatility)      #volatility가 바이딩하고 있는 것을 출력한다.

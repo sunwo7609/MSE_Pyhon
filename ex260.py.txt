@@ -1,0 +1,8 @@
+class OMG :
+    def print() : #객체가 없다.
+        print("Oh my god")
+
+
+mystock = OMG()
+mystock.print()    #mystock.print()을 OMG.print(mystock)으로 자동으로 파이썬이 바꾼다
+                      #하지만 print()은 객체가 없으므로 에러가 발생한다.

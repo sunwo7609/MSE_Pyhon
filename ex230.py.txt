@@ -1,0 +1,5 @@
+def my_print (a, b) : #b=100와 a=200을 함수my_print에 대입하면 print("왼쪽:", 200)  print("오른쪽:", 100)이 실행되어
+    print("왼쪽:", a)    # 왼쪽: 200
+    print("오른쪽:", b) # 오른쪽: 100으로 출력된다.
+
+my_print(b=100, a=200)
