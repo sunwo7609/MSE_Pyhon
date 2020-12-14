@@ -1,0 +1,9 @@
+if True :              #이 코드의 if절이 총 두개이다. 첫번째 줄 if절에 참이므로 두번째줄 if절이 실행된다.
+    if False:           #두번째줄 if문에서 거짓이므로 print("3")실행되어 3이 출력된다.
+             print("1")     
+             print("2")       
+    else:                   
+         print("3")
+else :
+    print("4")
+print("5")            #그리고 마지막줄 print("5")가 실행되어 5가 출력된다.
