@@ -1,0 +1,11 @@
+per = ["10.31", "", "8.00"]
+
+for i in per:     #for문을 이용해   원소를 하나씩 끄집어 낸다.
+    try:  
+        print(float(i)) #실행 코드이다.
+    except:  
+        print(X)  #예외가 발생했을 때 X가 출력된다.
+    else:
+        print("OK")  #예외가 아닐때 OK가 출력된다.
+    finally:
+        print("출력됨") # 늘 실행할때 출력됨이 출력된다.
