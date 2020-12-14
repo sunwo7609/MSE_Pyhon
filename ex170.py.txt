@@ -1,0 +1,5 @@
+sun=1     #for문 밖에 초기값은 1로 둔다.
+for i in range(1,11):  #range함수를 이용하여 i를 1부터 10까지의 정수를 바인딩한다. 
+    sun*= i            #sun=sun*i과 같다.그리고 등호의 오른쪽이 먼저 실행되므로 sun값이 누적되어 i가 1일때 sun은 1 i가 2일때 sun은2가된다. 
+    print(sun)          #for문 안에 두어 for문이 돌아갈때마다 sun의 값을 출력하게 한다.     
+    
