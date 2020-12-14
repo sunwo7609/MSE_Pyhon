@@ -1,0 +1,10 @@
+import requests
+btc = requests.get("https://api.bithumb.com/public/ticker/").json()['data']
+                                                                 #뺄셈연산을 위하여 string을 int로 바꾸기위하여 int를 사용한다. 
+변동폭 = int(btc['max_price']) - int(btc['min_price'])  #btc 딕셔너리에 접근하여 int(btc['max_price']) - int(btc['min_price'])을 변수'변동폭'에 바인딩한다.
+시가 = int(btc['opening_price'])                   #btc 딕셔너리에 접근하여 int(btc['opening_price'])을 '변수시가'에 바인딩한다.           
+최고가 = int(btc['max_price'])                     #btc 딕셔너리에 접근하여 int(btc['max_price'])을 변수'최고가'에 바인딩한다.  
+if (시가+변동폭) > 최고가:                        #만약 '최고가'가 시가+변동폭보다 크면 상승장을 출력하고 아니면 하락장을 출력한다.
+    print("상승장")
+else:
+    print("하락장")
